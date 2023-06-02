@@ -3,7 +3,7 @@
 increments a counter.
 a) Create a second counter counter2 using the makeCounter function and test to see if
 it remains independent to counter1
-    A: No, it's not independent, it refers to the reference so that return value is shared with couter 1.
+    A: Yes, it's independent, As I can see the console.log(result) I can see counter2 has got not influence by counter1()'s result or process.
 b) Modify makeCounter so that it takes an argument startFrom specifying where the
 counter starts from (instead of always starting from 0)
 c) Modify makeCounter to take another argument incrementBy, which specifies how

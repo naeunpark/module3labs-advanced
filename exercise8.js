@@ -40,6 +40,10 @@ class PrecisionClock extends DigitalClock {
         super(prefix);
         this.precision = precision ? precision : 1000;
     }
+    start() {
+        this.display();
+        this.timer = setInterval(() => this.display(), this.precision);
+    }
 }
 
 class AlarmClock extends DigitalClock {
